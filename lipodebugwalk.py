@@ -74,8 +74,6 @@ def main(argv):
         print '[!] error: directory \'%s\' doesn\'t exist' % (argv[1])
         sys.exit(1)
 
-    # os.path.walk() works with a callback
-    # handle_dir() will be called for each directory encountered
     os.path.walk(firefox_dir, handle_dir, None)
  
 if __name__ == '__main__':
